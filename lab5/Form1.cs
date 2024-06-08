@@ -28,7 +28,12 @@ namespace lab5
         private void addButton_Click(object sender, EventArgs e)
         {
             _creationForm = new CreationForm();
-            _creationForm.Show();
+            _creationForm.ShowDialog();
+
+            if (_creationForm.DialogResult == DialogResult.OK)
+            {
+                salad.vegetables.Add(_creationForm.Veg);
+            }
         }
 
         private void editButton_click(object sender, EventArgs e)
