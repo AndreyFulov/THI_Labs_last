@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="THI_LAb3">
+      <HintPath>..\..\THI_LAb3\THI_LAb3\bin\Debug\net8.0\THI_LAb3.dll</HintPath>
+    </Reference>
+    <Reference Include="VegetableFactory">
+      <HintPath>..\..\VegetableFactory\VegetableFactory\bin\Debug\net8.0\VegetableFactory.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
