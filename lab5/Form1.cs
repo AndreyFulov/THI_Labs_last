@@ -30,9 +30,11 @@ namespace lab5
             _creationForm = new CreationForm();
             _creationForm.ShowDialog();
 
-            if (_creationForm.DialogResult == DialogResult.OK)
+            if (_creationForm.Result == DialogResult.OK)
             {
-                salad.vegetables.Add(_creationForm.Veg);
+                Vegetable tempVeg = _creationForm.Veg;
+                salad.vegetables.Add(tempVeg);
+                UpdateListBox();
             }
         }
 

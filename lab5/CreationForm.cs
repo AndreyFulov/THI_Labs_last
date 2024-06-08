@@ -66,7 +66,12 @@ namespace lab5
             else if (classComboBox.SelectedIndex == 2) {
                 veg = new LeafyGreen(nameTextBox.Text, int.Parse(caloriesTextBox.Text),leafType.Text);
             }
+            else
+            {
+                veg = new LeafyGreen("Test", 1, "test");
+            }
             Result = DialogResult.OK;
+            this.Close();
         }
     }
 }
